@@ -1,4 +1,5 @@
 ﻿using Marten;
+using VERT.Core.Contacts;
 using VERT.Core.Meetings;
 using VERT.Core.Users;
 
@@ -12,6 +13,8 @@ namespace VERT.Infrastructure
                 .Duplicate(x => x.Name);
 
             For<Meeting>();
+
+            For<Contact>();
         }
     }
 }

@@ -8,6 +8,13 @@ namespace VERT.Core
 {
     public abstract class RootEntity
     {
+        public RootEntity()
+        {
+            CreatedOnUtc = DateTime.UtcNow;
+        }
+
         public Guid Id { get; set; } = Guid.NewGuid();
+
+        public DateTime CreatedOnUtc { get; private set; }
     }
 }

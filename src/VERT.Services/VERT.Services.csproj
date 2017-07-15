@@ -84,6 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseFeature.cs" />
+    <Compile Include="Features\Contacts\QueryContacts.cs" />
+    <Compile Include="Features\Contacts\EditContact.cs" />
     <Compile Include="Features\Meetings\CancelMeeting.cs" />
     <Compile Include="Features\Meetings\EditMeeting.cs" />
     <Compile Include="Features\Meetings\InviteUsersToMeeting.cs" />
