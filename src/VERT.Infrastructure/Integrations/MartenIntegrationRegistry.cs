@@ -27,9 +27,8 @@ namespace VERT.Infrastructure.Integrations
 
         private IDocumentSession CreateSession(IContext ctx)
         {
-            return ctx
-                .GetInstance<IDocumentStore>()
-                .OpenSession();
+            var store = ctx.GetInstance<IDocumentStore>();
+            return store.OpenSession();
         }
     }
 }

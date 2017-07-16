@@ -17,6 +17,8 @@ namespace VERT.Infrastructure.Integrations
                 scanner.AssemblyContainingType(typeof(IValidator<>));
 
                 scanner.ConnectImplementationsToTypesClosing(typeof(IAsyncRequestHandler<,>));
+                scanner.ConnectImplementationsToTypesClosing(typeof(IRequestHandler<,>));
+                scanner.ConnectImplementationsToTypesClosing(typeof(INotificationHandler<>));
                 scanner.ConnectImplementationsToTypesClosing(typeof(IAsyncNotificationHandler<>));
                 scanner.ConnectImplementationsToTypesClosing(typeof(IValidator<>));
             });

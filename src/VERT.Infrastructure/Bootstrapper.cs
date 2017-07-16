@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using VERT.Infrastructure.Integrations;
@@ -50,8 +51,8 @@ namespace VERT.Infrastructure
         /// </summary>
         public void AssertStructureMapIsValid()
         {
-            //var whatDoIHave = RootContainer.WhatDoIHave();
-            //var whatDidIScan = RootContainer.WhatDidIScan();
+            var whatDoIHave = RootContainer.WhatDoIHave();
+            var whatDidIScan = RootContainer.WhatDidIScan();
 
             RootContainer.AssertConfigurationIsValid();
         }
