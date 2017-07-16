@@ -4,9 +4,9 @@
   "platform": {
     "id": "aspnetcore",
     "displayName": "ASP.NET Core",
-    "output": "wwwroot/scripts",
-    "index": "wwwroot/index.html",
-    "baseDir": "./wwwroot",
+    "output": "../scripts",
+    "index": "../index.html",
+    "baseDir": "../",
     "baseUrl": "scripts"
   },
   "transpiler": {
@@ -56,9 +56,9 @@
       {
         "id": "aspnetcore",
         "displayName": "ASP.NET Core",
-        "output": "wwwroot/scripts",
-        "index": "wwwroot/index.html",
-        "baseDir": "./wwwroot",
+        "output": "../scripts",
+        "index": "../index.html",
+        "baseDir": "../",
         "baseUrl": "scripts"
       }
     ],
@@ -134,9 +134,34 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          "jquery",
+          {
+            "name": "bootstrap",
+            "path": "../node_modules/bootstrap/dist",
+            "main": "js/bootstrap.min",
+            "deps": [ "jquery" ],
+            "exports": "$",
+            "resources": [
+              "css/bootstrap.css"
+            ]
+          },
+          {
+            "name": "nprogress",
+            "path": "../node_modules/nprogress",
+            "main": "nprogress",
+            "resources": [
+              "nprogress.css"
+            ]
           }
         ]
       }
-    ]
+    ],
+    "copyFiles": {
+      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2": "../fonts",
+      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff": "../fonts",
+      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf": "../fonts",
+      "styles/styles.css": "../styles"
+    }
   }
 }

@@ -12,6 +12,11 @@ namespace VERT.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("storage/{*pathInfo}");
+            routes.IgnoreRoute("scripts/{*pathInfo}");
+            routes.IgnoreRoute("styles/{*pathInfo}");
+            routes.IgnoreRoute("imgs/{*pathInfo}");
+            routes.IgnoreRoute("fonts/{*pathInfo}");
 
             routes.MapRoute(
                 name: "Default",

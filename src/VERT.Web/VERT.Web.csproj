@@ -163,12 +163,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="client\.gitignore" />
-    <Content Include="client\index.html" />
     <Content Include="client\karma.conf.js" />
     <Content Include="client\src\app.html" />
+    <Content Include="client\src\contact-detail.html" />
+    <Content Include="client\src\contact-list.html" />
+    <Content Include="client\src\no-selection.html" />
+    <Content Include="client\styles\styles.css" />
+    <TypeScriptCompile Include="client\src\contact-detail.ts" />
+    <TypeScriptCompile Include="client\src\messages.ts" />
+    <TypeScriptCompile Include="client\src\resources\elements\loading-indicator.ts" />
+    <TypeScriptCompile Include="client\src\utility.ts" />
+    <TypeScriptCompile Include="client\src\web-api.ts" />
     <Content Include="client\test\aurelia-karma.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -176,13 +185,14 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="client\typings\globals\nprogress\index.d.ts" />
+    <TypeScriptCompile Include="client\typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="client\custom_typings\" />
     <Folder Include="client\src\resources\attributes\" />
     <Folder Include="client\src\resources\binding-behaviors\" />
-    <Folder Include="client\src\resources\elements\" />
     <Folder Include="client\src\resources\value-converters\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -236,14 +246,22 @@
     <TypeScriptCompile Include="client\aurelia_project\tasks\transpile.ts" />
     <TypeScriptCompile Include="client\aurelia_project\tasks\watch.ts" />
     <TypeScriptCompile Include="client\src\app.ts" />
+    <TypeScriptCompile Include="client\src\contact-list.ts" />
     <TypeScriptCompile Include="client\src\environment.ts" />
     <TypeScriptCompile Include="client\src\main.ts" />
+    <TypeScriptCompile Include="client\src\no-selection.ts" />
     <TypeScriptCompile Include="client\src\resources\index.ts" />
     <TypeScriptCompile Include="client\test\unit\app.spec.ts" />
     <TypeScriptCompile Include="client\test\unit\setup.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client\package-lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client\typings\globals\nprogress\typings.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
