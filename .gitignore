@@ -29,8 +29,6 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 src/packages/**/*
 src/.vs/config/applicationhost.config
-src/VERT.Web/client/wwwroot/**/*
-src/VERT.Web/styles/**
-src/VERT.Web/scripts/**
-src/VERT.Web/fonts/**
-src/VERT.Web/imgs/**
+src/VERT.WebApp/wwwroot/**/*
+!src/VERT.WebApp/wwwroot/do-not-delete.txt
+**/*/node_modules/**/*
